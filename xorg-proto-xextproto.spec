@@ -1,4 +1,4 @@
-# $Rev: 3300 $, $Date: 2005-08-15 12:17:57 $
+# $Rev: 3300 $, $Date: 2005-08-17 20:22:17 $
 #
 Summary:	XExt protocol and ancillary headers
 Summary(pl):	Nag³ówki protoko³u XExt i pomocnicze
@@ -31,6 +31,7 @@ Summary(pl):	xextproto
 Group:		X11/Development/Libraries
 Requires:	xorg-proto-inputproto-devel
 Requires:	xorg-proto-xproto-devel
+Obsoletes:	xextensions
 
 %description devel
 XExt protocol and ancillary headers.
