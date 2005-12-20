@@ -1,16 +1,15 @@
 Summary:	XExt protocol and ancillary headers
 Summary(pl):	Nag³ówki protoko³u XExt i pomocnicze
 Name:		xorg-proto-xextproto
-Version:	7.0.1
+Version:	7.0.2
 Release:	0.1
 License:	MIT
 Group:		X11/Development/Libraries
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC1/proto/xextproto-%{version}.tar.bz2
-# Source0-md5:	2ad511ee64710d58497f294fa3035423
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC4/proto/xextproto-%{version}.tar.bz2
+# Source0-md5:	b4c10b43fb3a33ee38bc606344f07b2e
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
-BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-util-util-macros
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -57,5 +56,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
+%doc COPYING ChangeLog
 %{_includedir}/X11/extensions/*.h
 %{_pkgconfigdir}/xextproto.pc
