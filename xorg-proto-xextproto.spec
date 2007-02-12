@@ -1,5 +1,5 @@
 Summary:	XExt protocol and ancillary headers
-Summary(pl.UTF-8):   Nagłówki protokołu XExt i pomocnicze
+Summary(pl.UTF-8):	Nagłówki protokołu XExt i pomocnicze
 Name:		xorg-proto-xextproto
 Version:	7.0.2
 Release:	1
@@ -21,7 +21,7 @@ Nagłówki protokołu XExt i pomocnicze.
 
 %package devel
 Summary:	XExt protocol and ancillary headers
-Summary(pl.UTF-8):   Nagłówki protokołu XExt i pomocnicze
+Summary(pl.UTF-8):	Nagłówki protokołu XExt i pomocnicze
 Group:		X11/Development/Libraries
 Requires:	xorg-proto-inputproto-devel
 Requires:	xorg-proto-xproto-devel
