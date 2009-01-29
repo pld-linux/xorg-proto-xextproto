@@ -1,12 +1,12 @@
 Summary:	XExt protocol and ancillary headers
 Summary(pl.UTF-8):	Nagłówki protokołu XExt i pomocnicze
 Name:		xorg-proto-xextproto
-Version:	7.0.4
+Version:	7.0.5
 Release:	1
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/xextproto-%{version}.tar.bz2
-# Source0-md5:	64c19cbf368f053cfc689609589dacfe
+# Source0-md5:	e6841018a7c64983b0954aa2c564d115
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
