@@ -1,5 +1,5 @@
-Summary:	XExt protocol and ancillary headers
-Summary(pl.UTF-8):	Nagłówki protokołu XExt i pomocnicze
+Summary:	XExt extension headers
+Summary(pl.UTF-8):	Nagłówki rozszerzeń XExt
 Name:		xorg-proto-xextproto
 Version:	7.0.5
 Release:	1
@@ -14,24 +14,24 @@ BuildRequires:	xorg-util-util-macros
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-XExt protocol and ancillary headers.
+XExt extension headers.
 
 %description -l pl.UTF-8
-Nagłówki protokołu XExt i pomocnicze.
+Nagłówki rozszerzeń XExt.
 
 %package devel
-Summary:	XExt protocol and ancillary headers
-Summary(pl.UTF-8):	Nagłówki protokołu XExt i pomocnicze
+Summary:	XExt extension headers
+Summary(pl.UTF-8):	Nagłówki rozszerzeń XExt
 Group:		X11/Development/Libraries
 Requires:	xorg-proto-inputproto-devel
 Requires:	xorg-proto-xproto-devel
 Obsoletes:	xextensions
 
 %description devel
-XExt protocol and ancillary headers.
+XExt extension headers.
 
 %description devel -l pl.UTF-8
-Nagłówki protokołu XExt i pomocnicze.
+Nagłówki rozszerzeń XExt.
 
 %prep
 %setup -q -n xextproto-%{version}
@@ -56,6 +56,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog
+%doc COPYING ChangeLog geproto.txt
 %{_includedir}/X11/extensions/*.h
 %{_pkgconfigdir}/xextproto.pc
