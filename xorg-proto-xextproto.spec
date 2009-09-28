@@ -11,7 +11,7 @@ Source0:	http://xorg.freedesktop.org/releases/individual/proto/xextproto-%{versi
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
-BuildRequires:	xorg-util-util-macros
+BuildRequires:	xorg-util-util-macros >= 1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -24,7 +24,6 @@ Nagłówki rozszerzeń XExt.
 Summary:	XExt extension headers
 Summary(pl.UTF-8):	Nagłówki rozszerzeń XExt
 Group:		X11/Development/Libraries
-Requires:	xorg-proto-inputproto-devel
 Requires:	xorg-proto-xproto-devel
 Obsoletes:	xextensions
 
