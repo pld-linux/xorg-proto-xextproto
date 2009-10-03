@@ -25,6 +25,7 @@ Summary:	XExt extension headers
 Summary(pl.UTF-8):	Nagłówki rozszerzeń XExt
 Group:		X11/Development/Libraries
 Requires:	xorg-proto-xproto-devel
+Suggests:	xorg-lib-libXext-devel >= 1:1.1
 Obsoletes:	xextensions
 
 %description devel
