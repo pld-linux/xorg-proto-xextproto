@@ -59,6 +59,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog specs/*.html
+%doc COPYING ChangeLog README specs/*.html
 %{_includedir}/X11/extensions/*.h
 %{_pkgconfigdir}/xextproto.pc
