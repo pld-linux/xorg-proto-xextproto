@@ -11,6 +11,8 @@ Source0:	http://xorg.freedesktop.org/releases/individual/proto/xextproto-%{versi
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
+BuildRequires:	docbook-dtd412-xml
+BuildRequires:	docbook-dtd43-xml
 BuildRequires:	xmlto >= 0.0.20
 BuildRequires:	xorg-sgml-doctools >= 1.5
 BuildRequires:	xorg-util-util-macros >= 1.10
