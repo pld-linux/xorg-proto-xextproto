@@ -19,10 +19,38 @@ BuildRequires:	xorg-util-util-macros >= 1.10
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-XExt extension headers.
+Header files for X protocol extensions, covering:
+- DOUBLE-BUFFER
+- DPMS
+- Extended-Visual-Information
+- Generic Event Extension
+- LBX
+- MIT-SHM
+- MIT-SUNDRY-NONSTANDARD
+- Multi-Buffering
+- SECURITY
+- SHAPE
+- SYNC
+- TOG-CUP
+- XC-APPGROUP
+- XTEST
 
 %description -l pl.UTF-8
-Nagłówki rozszerzeń XExt.
+Pliki nagłówkowe rozszerzeń protokołu X, obejmujące:
+- DOUBLE-BUFFER
+- DPMS
+- Extended-Visual-Information
+- Generic Event Extension
+- LBX
+- MIT-SHM
+- MIT-SUNDRY-NONSTANDARD
+- Multi-Buffering
+- SECURITY
+- SHAPE
+- SYNC
+- TOG-CUP
+- XC-APPGROUP
+- XTEST
 
 %package devel
 Summary:	XExt extension headers
@@ -33,10 +61,38 @@ Suggests:	xorg-lib-libXext-devel >= 1:1.1
 Obsoletes:	xextensions
 
 %description devel
-XExt extension headers.
+Header files for X protocol extensions, covering:
+- DOUBLE-BUFFER
+- DPMS
+- Extended-Visual-Information
+- Generic Event Extension
+- LBX
+- MIT-SHM
+- MIT-SUNDRY-NONSTANDARD
+- Multi-Buffering
+- SECURITY
+- SHAPE
+- SYNC
+- TOG-CUP
+- XC-APPGROUP
+- XTEST
 
 %description devel -l pl.UTF-8
-Nagłówki rozszerzeń XExt.
+Pliki nagłówkowe rozszerzeń protokołu X, obejmujące:
+- DOUBLE-BUFFER
+- DPMS
+- Extended-Visual-Information
+- Generic Event Extension
+- LBX
+- MIT-SHM
+- MIT-SUNDRY-NONSTANDARD
+- Multi-Buffering
+- SECURITY
+- SHAPE
+- SYNC
+- TOG-CUP
+- XC-APPGROUP
+- XTEST
 
 %prep
 %setup -q -n xextproto-%{version}
@@ -45,7 +101,8 @@ Nagłówki rozszerzeń XExt.
 %{__aclocal}
 %{__autoconf}
 %{__automake}
-%configure
+%configure \
+	--without-fop
 
 %{__make}
 
@@ -53,8 +110,10 @@ Nagłówki rozszerzeń XExt.
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	pkgconfigdir=%{_pkgconfigdir}
+	DESTDIR=$RPM_BUILD_ROOT
+
+# packaged as %doc
+%{__rm} -r $RPM_BUILD_ROOT%{_docdir}/xextproto
 
 %clean
 rm -rf $RPM_BUILD_ROOT
