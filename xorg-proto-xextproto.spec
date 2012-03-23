@@ -1,21 +1,20 @@
 Summary:	XExt extension headers
 Summary(pl.UTF-8):	Nagłówki rozszerzeń XExt
 Name:		xorg-proto-xextproto
-Version:	7.2.0
+Version:	7.2.1
 Release:	1
 Epoch:		1
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/xextproto-%{version}.tar.bz2
-# Source0-md5:	220732210ceffb01bf1caf970e3b1bfb
+# Source0-md5:	eaac343af094e6b608cf15cfba0f77c5
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
-BuildRequires:	docbook-dtd412-xml
 BuildRequires:	docbook-dtd43-xml
-BuildRequires:	xmlto >= 0.0.20
-BuildRequires:	xorg-sgml-doctools >= 1.5
-BuildRequires:	xorg-util-util-macros >= 1.10
+BuildRequires:	xmlto >= 0.0.22
+BuildRequires:	xorg-sgml-doctools >= 1.8
+BuildRequires:	xorg-util-util-macros >= 1.12
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
