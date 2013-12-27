@@ -1,13 +1,13 @@
 Summary:	XExt extension headers
 Summary(pl.UTF-8):	Nagłówki rozszerzeń XExt
 Name:		xorg-proto-xextproto
-Version:	7.2.1
+Version:	7.3.0
 Release:	1
 Epoch:		1
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/xextproto-%{version}.tar.bz2
-# Source0-md5:	eaac343af094e6b608cf15cfba0f77c5
+# Source0-md5:	70c90f313b4b0851758ef77b95019584
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
