@@ -2,7 +2,7 @@ Summary:	XExt extension headers
 Summary(pl.UTF-8):	Nagłówki rozszerzeń XExt
 Name:		xorg-proto-xextproto
 Version:	7.3.0
-Release:	1
+Release:	2
 Epoch:		1
 License:	MIT
 Group:		X11/Development/Libraries
