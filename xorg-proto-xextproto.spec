@@ -1,14 +1,15 @@
+# NOTE: now maintained in xorg-proto-xorgproto.spec
 Summary:	XExt extension headers
 Summary(pl.UTF-8):	Nagłówki rozszerzeń XExt
 Name:		xorg-proto-xextproto
 Version:	7.3.0
-Release:	2
+Release:	2.1
 Epoch:		1
 License:	MIT
 Group:		X11/Development/Libraries
-Source0:	http://xorg.freedesktop.org/releases/individual/proto/xextproto-%{version}.tar.bz2
+Source0:	https://xorg.freedesktop.org/releases/individual/proto/xextproto-%{version}.tar.bz2
 # Source0-md5:	70c90f313b4b0851758ef77b95019584
-URL:		http://xorg.freedesktop.org/
+URL:		https://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	docbook-dtd43-xml
@@ -120,5 +121,18 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %doc COPYING ChangeLog README specs/*.html
-%{_includedir}/X11/extensions/*.h
+%{_includedir}/X11/extensions/EVI*.h
+%{_includedir}/X11/extensions/ag*.h
+%{_includedir}/X11/extensions/cup*.h
+%{_includedir}/X11/extensions/dbe*.h
+%{_includedir}/X11/extensions/dpms*.h
+%{_includedir}/X11/extensions/ge*.h
+%{_includedir}/X11/extensions/lbx*.h
+%{_includedir}/X11/extensions/mitmisc*.h
+%{_includedir}/X11/extensions/multibuf*.h
+%{_includedir}/X11/extensions/secur*.h
+%{_includedir}/X11/extensions/shape*.h
+%{_includedir}/X11/extensions/shm*.h
+%{_includedir}/X11/extensions/sync*.h
+%{_includedir}/X11/extensions/xtest*.h
 %{_pkgconfigdir}/xextproto.pc
